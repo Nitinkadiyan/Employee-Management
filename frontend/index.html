@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Employee Management System</h1>
+
+        <!-- Form Section -->
+        <div class="form-container">
+
+            <h2>Add Employee</h2>
+
+            <form id="employeeForm">
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="Enter employee name">
+                </div>
+
+                <div class="form-group">
+                    <label>Department</label>
+                    <input type="text" id="department" placeholder="Enter department">
+                </div>
+
+                <div class="form-group">
+                    <label>Role</label>
+                    <input type="text" id="role" placeholder="Enter role">
+                </div>
+
+                <div class="form-group">
+                    <label>Salary</label>
+                    <input type="number" id="salary" placeholder="Enter salary">
+                </div>
+
+                <div class="form-group">
+                    <label>Join Date</label>
+                    <input type="date" id="joinDate">
+                </div>
+
+                <button type="submit" class="add-btn">
+                    Add Employee
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Table Section -->
+
+        <div class="table-container">
+
+            <h2>Employee List</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Role</th>
+                        <th>Salary</th>
+                        <th>Join Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTableBody">
+
+                    <!-- Data will come from JS -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
